@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+<input (change)="mudaPlataforma($event, plataforma.value)" #plataforma type="text">
+
+<ul>
+  <li *ngFor="let game of gamesMostrar">
+    {{game.nome}}
+  </li>
+</ul>
